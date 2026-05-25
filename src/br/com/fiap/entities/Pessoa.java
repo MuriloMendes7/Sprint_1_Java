@@ -41,11 +41,13 @@ public abstract class Pessoa {
 
     @Override
     public String toString() {
-        return "\nInformações da Pessoa" +
+        return "\nInformações da Persona:" +
                 "\nID: " + id +
                 "\nNome: " + nome +
                 "\nEmail: " + email;
     }
 
     public abstract String getCargo();
+    public abstract boolean verificarDisponibilidade(String diaSemana);
+    public abstract String gerarAcaoObrigatoria(String textoConversa);
 }
